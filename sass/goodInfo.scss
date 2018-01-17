@@ -1,0 +1,265 @@
+*{  
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html,body{
+    height: 100%;  
+}
+
+h1{
+            width: 100%;
+            height: 42px;
+            border-bottom: 1px solid #ccc;
+            padding:7px 10px;
+            box-sizing: border-box;
+            line-height: 26px;
+            margin-bottom: 10px;
+            .a1,.s2{
+                font-size: 18px;
+                color: #333367;
+                float: left;
+            }
+            .a1:hover{
+                color: orange;
+                text-decoration: underline;
+            }
+            .s1{
+                margin: 0 4px;
+                color: #333367;
+                float: left;
+            }
+            .s2{
+                margin-right: 15px;
+            }
+            .a2{
+                display: block;
+                margin-top: 3px;
+                float: left;
+            }
+            .a3{
+                float: right;
+                display: block;
+                width: 98px;
+                height: 26px;
+                line-height: 26px;
+                color: #fff;
+                font-size: 12px;
+                text-align: center;
+                background: #c43926;
+                border-radius: 5px;
+            }
+            
+        }
+        .tab-div{
+            width: 100%;
+            height: 952px;
+            background: #fff;
+            padding: 1px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+           .tabbody-div{
+               width: 100%;
+               height: 100%;
+               padding: 10px;
+               box-sizing: border-box;
+               form{
+                   height: 100%;
+               
+                  .goodName{
+                      width: 100%;
+                      height: 60px;
+                      
+                       line-height: 40px;
+                      .nameRight{
+                          height: 100%;
+                          width: 320px;
+                          margin-right: 30px;
+                          float: left;
+                         
+                          text-align: right;
+                      }
+                      input{
+                          width: 190px;
+                          height: 20px;
+                          margin-top: 10px;
+                      }
+                  }
+                  .goodNum{
+                      width: 100%;
+                      height: 60px;
+                      
+                       line-height: 40px;
+                      .numRight{
+                          height: 100%;
+                          width: 320px;
+                          margin-right: 30px;
+                          float: left;
+                         
+                          text-align: right;
+                      }
+                      input{
+                          width: 150px;
+                          height: 20px;
+                          margin-top: 10px;
+                      }
+                  }
+                  .goodClass{
+                      width: 100%;
+                      height: 60px;
+                      
+                       line-height: 40px;
+                      .classRight{
+                          height: 100%;
+                          width: 320px;
+                          margin-right: 30px;
+                          float: left;
+                         
+                          text-align: right;
+                      }
+                      select{
+                          width: 150px;
+                          height: 20px;
+                          margin-top: 10px;
+                      }
+                  }
+                  .goodCart{
+                      width: 100%;
+                      height: 60px;
+                      
+                       line-height: 40px;
+                      .cartRight{
+                          height: 100%;
+                          width: 320px;
+                          margin-right: 30px;
+                          float: left;
+                         
+                          text-align: right;
+                      }
+                      select{
+                          width: 150px;
+                          height: 20px;
+                          margin-top: 10px;
+                      }
+                  }
+                  .goodPrice{
+                      width: 100%;
+                      height: 60px;
+                      
+                       line-height: 40px;
+                      .priceRight{
+                          height: 100%;
+                          width: 320px;
+                          margin-right: 30px;
+                          float: left;
+                         
+                          text-align: right;
+                      }
+                      input{
+                          width: 150px;
+                          height: 20px;
+                          margin-top: 10px;
+                      }
+                  }
+                  .goodImg{
+                      width: 100%;
+                      height: 60px;
+                      
+                       line-height: 40px;
+                      .imgRight{
+                          height: 100%;
+                          width: 320px;
+                          margin-right: 30px;
+                          float: left;
+                         
+                          text-align: right;
+                      }
+                      input{
+                          width: 150px;
+                          height: 20px;
+                          margin-top: 10px;
+                      }
+                  }
+                   .goodLiang{
+                      width: 100%;
+                      height: 60px;
+                      
+                       line-height: 40px;
+                      .liangRight{
+                          height: 100%;
+                          width: 320px;
+                          margin-right: 30px;
+                          float: left;
+                         
+                          text-align: right;
+                      }
+                      input{
+                          width: 150px;
+                          height: 20px;
+                          margin-top: 10px;
+                      }
+                  }
+                  .goodXL{
+                      width: 100%;
+                      height: 60px;
+                      
+                       line-height: 40px;
+                      .xlRight{
+                          height: 100%;
+                          width: 320px;
+                          margin-right: 30px;
+                          float: left;
+                         
+                          text-align: right;
+                      }
+                      input{
+                          width: 150px;
+                          height: 20px;
+                          margin-top: 10px;
+                      }
+                  }
+                  .bot{
+                      margin-top: 50px;
+                      margin-left: 300px;
+                      button{
+                          width: 40px;
+                          height: 20px;
+                          border-radius: 5px;
+                          background: #ff3f3f;
+                          color: #fff;
+                          border: 0;
+                          margin-left: 30px;
+                      }
+                      
+                  }
+                  
+               }
+           }
+        }
+        .tabbar-div{
+            width: 100%;
+            height: 39px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            background: #efefef;
+            p{
+                float: left;
+                
+                
+                span{
+                    float: left;
+                    display: block;
+                    padding: 0 20px;
+                    height: 100%;
+                    line-height: 38px;
+                }
+                span:nth-child(1){
+                    background: #fff;
+                }
+            }
+        }

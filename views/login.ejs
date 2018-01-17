@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <link rel="stylesheet" href="/stylesheets/index.css" />
+  <meta charset="utf-8"/>
+  <script src="/javascripts/jquery-1.11.3.js" charset="utf-8"></script>
+  <body>
+   		<div id="contain">
+   				<h1><a href="javascript:;"><img src="/images/shopex.png"/></a></h1>
+   				<div class="main">
+   					<h2><img src="/images/ecshop-logo.png" /></h2>
+   					<div class="form">
+   						<form action="/loginAction">
+   								<div class="username d1">
+   									<b></b>
+   									<input type="text" value="用户名" class = 'in1'/>
+   								</div>
+   								<div class="psw d1">
+   									<b></b>
+   									<input type="text" value="密码" class = 'in1'/>
+   								</div>
+   								<div class="autoCode d1">
+   									<b></b>
+   									<input type="text" value="验证码" class = 'in1'/>
+   									<div class="img">
+   										<img	src="/images/4.jpg" />
+   									</div>
+   								</div>
+   								<button type="button" id="btn" onclick = "login()">登录</button>
+   								<div class="bot">
+   									<input type="checkbox" /><span>保存登录信息</span>
+   									<a href="javascript:;">忘记密码</a>
+   									<a href="javascript:;" class = "c1">去店铺首页>></a>
+   								</div>
+   						</form>
+   					</div>
+   					<div class="login">
+   							<img src="/images/icloud-bar.png"  />  
+   					</div>
+   				</div>
+   		</div>
+  </body>
+  <script type="text/javascript">
+    		function login(){
+    			$.ajax({
+    				type : "POST",
+    				url : "/api/ajax4login",
+    				data : {
+    					username : $(".username input").val(),
+    					psw : $(".psw input").val()
+    				},
+    			 success : function(res){
+    			 		console.log(res);
+    			 		if(res.code == 1){
+    			 			alert(res.message);
+    			 			location.href = "/main?="+new Date()
+    			 		}else{
+    			 			alert(res.message)
+    			 		}
+    			 }
+    			})
+    		}
+  </script>
+</html>
