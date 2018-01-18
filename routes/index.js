@@ -36,7 +36,7 @@ router.get("/api/update",function(req,res,next){
 })
 var num = 0
 router.post("/api/ajax4goodInfo",function(req,res,next){
-	console.log(1)
+
 	
 		var form = new multiparty.Form({
 			uploadDir:"public/imgs"
@@ -77,10 +77,28 @@ router.post("/api/ajax4goodInfo",function(req,res,next){
 
 router.get("/api/getTable",function(req,res,next){
 	var num = req.query.num;
+	GoodModel.count({num:{$gt:num},flag:1},function(err,count){
+		console.log(count);
+		res.json(count)
+	})
+})
+router.get("/api/getTable1",function(req,res,next){
+	var num = req.query.num;
 	GoodModel.find({num:{$gt:num},flag:1},function(err,docs){
+		console.log(docs);
 		res.json(docs)
 	})
 })
+
+router.get("/api/search",function(req,res,next){
+	
+	var goodName = req.query.goodName;
+	
+	GoodModel.find({goodName:{$regex:goodName},flag:1},function(err,docs){
+		res.json(docs)
+	})
+})
+
 router.get("/goodList",function(req,res,next){
 	res.render("goodList",{});
 })
@@ -89,6 +107,16 @@ router.get("/goodEdit",function(req,res,next){
 })
 router.get("/goodInfo",function(req,res,next){
 	res.render("goodInfo",{});
+})
+router.get("/api/getFenye",function(req,res,next){
+	var num = parseInt(req.query.num);
+	var page = parseInt(req.query.page);
+	console.log(page)
+	var query = GoodModel.find({flag:1}).skip((page-1)*num).limit(num);
+	query.exec(function(err,docs){
+		res.json(docs)
+	})
+	
 })
 
 router.get("/api/del",function(req,res,next){

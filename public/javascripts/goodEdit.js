@@ -39,6 +39,12 @@ $.ajax({
 	}
 	
 
-
+function reset(){
+	var inps = $(".tabbody-div form input");
+	var len = inps.length;
+	for(var i = 0;i < len;i ++){
+		inps[i].val = '';
+	}
+}
 
  

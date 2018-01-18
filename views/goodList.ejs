@@ -36,8 +36,8 @@
 						<option>内衣</option>
 					</select>
 					<span class="s2">关键字</span>
-					<input type="text" class="txt"/>
-					<button type="button">搜索</button>
+					<input type="text" id="txt" />
+					<button type="button"  id="search">搜索</button>
 				</div>
 				
 				
@@ -45,7 +45,7 @@
 				<form action="" method="post">
 					<div class="listDiv">
 						<table border="0" >
-							<tr>
+							<tr class="tr1">
 								<td>
 									<input type="checkbox" name="" id="" value="" />
 									<span>编号</span>
@@ -67,12 +67,12 @@
 						</table>
 						<div id="txtBot">
 							
-							<p class="right"><a href="javascript">第一页</a>
-								<a href="javascript">上一页</a>
-								<a href="javascript">下一页</a>
-								<a href="javascript">最末页</a>
+							<p class="right"><span  class="first" >第一页</span>
+								<span  class="pre" >上一页</span>
+								<span  class="next" >下一页</span>
+								<span class="last">最末页</span>
 							</p>
-							<p class="left">总计<span class="sum"></span>个记录分为<span class="page"></span>页,当前第<span class="cur"></span>页，每页<input type="number"/></p>
+							<p class="left">总计<span class="sum"></span>个记录分为<span class="page">1</span>页,当前第<span class="cur">1</span>页，每页<input type="text"/></p>
 						</div>
 					</div>
 				</form>
